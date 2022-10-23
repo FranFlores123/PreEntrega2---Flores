@@ -394,11 +394,11 @@ header .menu {
     font-weight: 800;
     z-index: 1;
     position: absolute;
+    text-shadow: 3px 3px 4px #0000008f;
 }
 
 .backgorund__pizza span {
     color:#ff6347;
-    ;
 }
 
 .section__card {
