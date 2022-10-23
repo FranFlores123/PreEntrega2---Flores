@@ -13,7 +13,6 @@ font-family: 'Satisfy', cursive;
 }
 
 /*** INICIO HOME ***/
-
 .body__home {
     background-color: #242323;
 }
@@ -241,7 +240,6 @@ font-family: 'Satisfy', cursive;
               transform-origin: 100% 0%;
     }
 }
-  
 
 @media screen and (min-width: 900px) {
 .box a:hover {
@@ -311,12 +309,8 @@ font-family: 'Satisfy', cursive;
         order: 1;
     }    
 }
-
 /*** FIN HOME ***/
-
-
 /**** INICIO MENU ****/
-
 header {
     width: 100%;
     background-color: #494040;
@@ -615,7 +609,6 @@ footer a {
 }
 
 /*** FIN MENU ***/
-
 /*** INICIO CONTACTO***/
 
 .contacto {
@@ -651,7 +644,6 @@ footer a {
     color: #ff6347;
     text-shadow: 1px 1px 1px #ffffff;
 }
-
 .contacto__mensaje h2 {
     font-size: 6rem;
     text-transform: uppercase;
@@ -662,7 +654,6 @@ footer a {
     font-family: 'Satisfy', cursive;
     padding-bottom: 1rem;
 }
-
 .contacto__mensaje p {
     text-align: center;
     padding-inline: 10rem;
@@ -712,11 +703,8 @@ footer a {
     font-size: 2rem;
     font-family: 'Marcellus SC', serif;
 }
-
 /*** FIN CONTACTO ***/
-
 /*** MEDIA QUERIES ***/
-
 @media screen and (min-width:901px) {
 
     .menu__item a:hover {
@@ -800,7 +788,7 @@ footer a {
         height: 70vh;
     }
 
-    /*** MENU ***/
+    /*** FIN MENU ***/
 }
 
 @media screen and (max-width: 480px) {
