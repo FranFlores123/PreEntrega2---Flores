@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Menu</title>
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="btn__menu">
+        <label class="btn__label" for="btn__menu"><img class="imgiconomenu" src="../images/menu icono.png" alt="menu icono"></label>
+        <nav class="navbar">
+            <ul class="menu">
+                <li class="menu__item"><a href="../index.html"> Pizza House </a> </li>
+                <li class="menu__item"><a href="../pages/menu.html"> Menu </a></li>
+                <li class="menu__item"><a href="../pages/cucina.html"> Cucina con Noi </a></li>
+                <li class="menu__item"><a href="../pages/quienessomos.html"> Quienes somos </a></li>
+                <li class="menu__item"><a href="../pages/contacto.html"> Contacto </a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contacto">
+        <div class="contacto__mensaje">
+            <h2> pizza <span>house</span></h2>
+            <h3>la vera cucina italiana</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, maiores? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis suscipit ipsa soluta enim laudantium aspernatur numquam voluptatibus, in minima natus!</p>
+        </div>
+        <div class="contacto__formulario">
+            <form action="enviar.php" method="post" enctype="text/plain">
+        
+                <label for="names">Nombre</label>
+                <input id="names" name="names" type="text" required>
+
+                <label for="apellido">Apellido</label>
+                <input id="apellido" name="apellido" type="text" required>
+
+                <label for="edad">Edad</label>
+                <input id="edad" name="edad" type="number">
+
+                <label for="mail">Correo</label>
+                <input id="mail" name="mail" type="email" required>
+        
+                <label for="date">Comentarios</label>
+                <textarea name="com" id="coment" cols="40" rows="10" placeholder="contanos como podemos ayudarte"></textarea>
+            <div class="botones">
+                <input class="submit" type="submit" value="Enviar">
+                <input class="reset" type="reset" value="reset">
+            </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <h2>Seguinos</h2>
+        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+    </footer>
+</body>
+</html>
