@@ -572,13 +572,13 @@ header .menu {
 .section__card__veggie a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     background-color: #ff6347;
-    padding: 1vw;
+    padding: 1rem;
+    font-weight: 300;
     border-radius: 15px;
     text-transform: uppercase;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    letter-spacing: 3px;
+    font-family: 'Rubik Dirt', cursive;
 }
 
 .section__card .description,
