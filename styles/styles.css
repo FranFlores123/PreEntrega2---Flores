@@ -13,7 +13,6 @@ font-family: 'Satisfy', cursive;
 }
 
 /*** INICIO HOME ***/
-
 .body__home {
     background-color: #242323;
 }
@@ -241,7 +240,6 @@ font-family: 'Satisfy', cursive;
               transform-origin: 100% 0%;
     }
 }
-  
 
 @media screen and (min-width: 900px) {
 .box a:hover {
@@ -311,12 +309,8 @@ font-family: 'Satisfy', cursive;
         order: 1;
     }    
 }
-
 /*** FIN HOME ***/
-
-
 /**** INICIO MENU ****/
-
 header {
     width: 100%;
     background-color: #494040;
@@ -614,121 +608,7 @@ footer a {
     font-size: 40px;
 }
 
-@media screen and (min-width:901px) {
-
-    .menu__item a:hover {
-        color: #ff6347;
-    }
-    .section__card a:hover,
-    .section__card__veggie a:hover {
-        color: #494040;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    /* MENU ICONO */
-
-    .btn__label {
-        display: block;
-    }
-
-    .navbar {
-        position: absolute;
-        background-color: rgb(131, 111, 111);
-        width: 40vw;
-        margin-left: -70%;
-        transition: all 0.5s;
-        z-index: 2;
-    }
-
-    .menu {
-        flex-direction: column;
-    }
-
-    header .menu__item {
-        width: 100%;
-        height: 15vh;
-        border-top: 1px solid #ffffff;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    #btn__menu:checked ~ .navbar {
-        margin-left: 0;   
-   }
-
-   /* FIN MENU ICONO */
-
-    .section__card {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(5, 1fr);
-        gap: 2rem;
-        grid-template-areas: 
-            "card1  card2"
-            "card3  card4"
-            "card5  card6"
-            "card7  card8"
-            "card9  card10"
-            "card11  card12"
-            "card13  card14"
-            "card15  card16"
-            "card17  card18";
-    }
-
-    .section__card__veggie {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 2rem;
-        grid-template-areas: 
-            "card19  card20"
-            "card21  card22"
-            "card23  card24";
-    }
-    .card {
-        width: 45vw;
-        flex-direction: column;
-        height: 70vh;
-    }
-}
-
-@media screen and (max-width: 480px) {
-
-    .backgorund__pizza {
-        height: 30vh;
-    }
-
-    .backgorund__pizza h2 {
-        font-size: 3.5rem;
-    }
-
-    .section__card,
-    .section__card__veggie {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .section__card a,
-    .section__card__veggie a {
-        padding: 20px;
-    }
-    .card {
-        width: 80vw;
-        height: 70vh;
-    }
-    .pizzaimg {
-        margin-bottom: 1.5rem;
-        max-width: 30vh;
-    }
-
-    #btn__menu:checked ~ .navbar {
-        width: 60vw;
-    }
-}
-
 /*** FIN MENU ***/
-
 /*** INICIO CONTACTO***/
 
 .contacto {
@@ -764,7 +644,6 @@ footer a {
     color: #ff6347;
     text-shadow: 1px 1px 1px #ffffff;
 }
-
 .contacto__mensaje h2 {
     font-size: 6rem;
     text-transform: uppercase;
@@ -775,7 +654,6 @@ footer a {
     font-family: 'Satisfy', cursive;
     padding-bottom: 1rem;
 }
-
 .contacto__mensaje p {
     text-align: center;
     padding-inline: 10rem;
@@ -825,11 +703,174 @@ footer a {
     font-size: 2rem;
     font-family: 'Marcellus SC', serif;
 }
+/*** FIN CONTACTO ***/
+/*** MEDIA QUERIES ***/
+@media screen and (min-width:901px) {
 
-.submit:hover,
-.reset:hover {
+    .menu__item a:hover {
+        color: #ff6347;
+    }
+    .section__card a:hover,
+    .section__card__veggie a:hover {
+        color: #494040;
+    }
+    .submit:hover,
+    .reset:hover {
     background-color: rgb(131, 111, 111);
     cursor: pointer;
+    }
 }
 
-/*** FIN CONTACTO ***/
+@media screen and (max-width: 900px) {
+    /* MENU ICONO */
+
+    .btn__label {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        background-color: rgb(131, 111, 111);
+        width: 40vw;
+        margin-left: -70%;
+        transition: all 0.5s;
+        z-index: 2;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    header .menu__item {
+        width: 100%;
+        height: 15vh;
+        border-top: 1px solid #ffffff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #btn__menu:checked ~ .navbar {
+        margin-left: 0;   
+   }
+
+   /* FIN MENU ICONO */
+   /*** MENU ***/
+    .section__card {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        gap: 2rem;
+        grid-template-areas: 
+            "card1  card2"
+            "card3  card4"
+            "card5  card6"
+            "card7  card8"
+            "card9  card10"
+            "card11  card12"
+            "card13  card14"
+            "card15  card16"
+            "card17  card18";
+    }
+
+    .section__card__veggie {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 2rem;
+        grid-template-areas: 
+            "card19  card20"
+            "card21  card22"
+            "card23  card24";
+    }
+    .card {
+        width: 45vw;
+        flex-direction: column;
+        height: 70vh;
+    }
+
+    /*** FIN MENU ***/
+}
+
+@media screen and (max-width: 480px) {
+    /*** MENU ***/
+
+    .backgorund__pizza {
+        height: 30vh;
+    }
+
+    .backgorund__pizza h2 {
+        font-size: 3.5rem;
+    }
+
+    .section__card,
+    .section__card__veggie {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section__card a,
+    .section__card__veggie a {
+        padding: 20px;
+    }
+    .card {
+        width: 80vw;
+        height: 70vh;
+    }
+    .pizzaimg {
+        margin-bottom: 1.5rem;
+        max-width: 30vh;
+    }
+
+    #btn__menu:checked ~ .navbar {
+        width: 60vw;
+    }
+
+    /*** CONTACTO ***/
+
+    .contacto {
+        flex-direction: column;
+        height: 200vh;
+    }
+
+    .contacto__mensaje {
+        height: 100vh;
+        padding-top: 15vh;
+    }
+    .contacto:before {
+        height: 200vh;
+    }
+
+    .contacto__mensaje h2 {
+        font-size: 10vw;
+        padding-bottom: 1rem;
+    }
+    .contacto__mensaje h3 {
+        font-size: 8vw;
+        padding-bottom: 4rem;
+    }
+    .contacto__mensaje p {
+        font-size: 5vw;
+        padding-inline: 4rem;
+    }
+
+    .contacto__formulario {
+        height: calc(100vh);
+    }
+    
+    .contacto__formulario form {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        font-size: 1.5rem;
+        font-family: 'Marcellus SC', serif;
+    }
+    
+    .contacto__formulario input {
+        font-size: 1rem;
+    }
+
+    .contacto__formulario .submit,
+    .contacto__formulario .reset {
+        font-size: 1.5rem;
+    }
+}
