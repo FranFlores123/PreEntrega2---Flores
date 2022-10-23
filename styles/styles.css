@@ -420,26 +420,6 @@ header .menu {
             "card16 card17 card18";
 }
 
-.card {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 45vh;
-    width: 30vw;
-    padding-block: 3rem;
-    padding-inline: 2rem;
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.459);
-    border-radius: 20px;
-}
-
-.pizzaimg {
-    max-width: 27vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .card1 {
     grid-area: card1;
 }
@@ -546,6 +526,26 @@ header .menu {
 }
 .card24 {
     grid-area: card24;
+}
+
+.card {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45vh;
+    width: 30vw;
+    padding-block: 3rem;
+    padding-inline: 2rem;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.459);
+    border-radius: 20px;
+}
+
+.pizzaimg {
+    max-width: 27vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .section__card h2,
