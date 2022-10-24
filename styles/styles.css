@@ -83,28 +83,6 @@ font-family: 'Satisfy', cursive;
     background-color: rgba(68, 68, 68, 0.562);
 }
 
-@keyframes zoomin {
-    0% {
-        -webkit-transform: scale(1);
-		transform: scale(1);
-    }
-    100% {
-        -webkit-transform: scale(1.2);
-		transform: scale(1.2);
-    }
-}
-
-@-webkit-keyframes zoomin {
-    0% {
-        -webkit-transform: scale(1);
-		transform: scale(1);
-    }
-    100% {
-        -webkit-transform: scale(1.2);
-		transform: scale(1.2);
-    }
-}
-
 .box1 h1 {
     color: rgb(252, 229, 215);
     font-size: 70px;
@@ -176,14 +154,14 @@ font-family: 'Satisfy', cursive;
     background-color: #ff6347;
     z-index: 1;
     font-family: 'Satisfy', cursive;
-    font-size: 40px;
+    font-size: 7vh;
 }
 
 .box3, .box4 {
     background-color: rgb(82, 73, 73);
     z-index: 1;
     font-family: 'Satisfy', cursive;
-    font-size: 40px;
+    font-size: 7vh;
 }
 
 .box a {
@@ -246,7 +224,7 @@ font-family: 'Satisfy', cursive;
 .box a:hover {
     color:#ff6347;
     font-size: 45px;
-    transition: all 0.2s;
+    transition: all 0.3s;
     text-shadow: none;
 }
 
@@ -269,7 +247,7 @@ font-family: 'Satisfy', cursive;
     .box3,
     .box4,
     .box5 {
-        font-size: 35px;
+        font-size: 6vh;
     }
 }
 
@@ -294,18 +272,17 @@ font-family: 'Satisfy', cursive;
         flex: 2;
     }
     .box1 h1 {
-        font-size: 45px;
+        font-size: 7vh;
     }
     .box1 h2 {
-        font-size: 35px;
+        font-size: 5vh;
     }
     .box2 a,
     .box3 a,
     .box4 a,
     .box5 a {
-        font-size: 35px;
+        font-size: 5.5vh;
     }
-
     .box4 {
         order: 1;
     }    
@@ -386,7 +363,7 @@ header .menu {
 .background__pizza h2 {    
     color: rgb(255, 255, 255);
     text-transform: uppercase;
-    font-size: 6rem;
+    font-size: 15vh;
     font-family: 'Rubik Dirt', cursive;
     font-weight: 800;
     z-index: 1;
@@ -407,7 +384,7 @@ header .menu {
     padding-inline: 3vw;
     gap: 3vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas: 
             "card1  card2  card3"
             "card4  card5  card6"
@@ -474,8 +451,8 @@ header .menu {
 
 .veggie__title {
     width: 100%;
-    height: 8rem;
-    padding-top: 2rem;
+    height: 15vh;
+    padding-block: 2vh;
     margin-block: 3rem;
     background-color: #494040;
     color: #ffffff;
@@ -483,7 +460,7 @@ header .menu {
     text-align: center;
     display: block;
     font-family: 'Rubik Dirt', cursive;
-    font-size: 2rem;
+    font-size: 6vh;
 }
 
 .veggie__title span {
@@ -533,10 +510,11 @@ header .menu {
     width: 30vw;
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.459);
     border-radius: 20px;
+    padding-inline: 2vw;
 }
 
 .pizzaimg {
-    max-width: 40%;
+    max-width: 13vw;
 }
 
 .section__card .description,
@@ -546,7 +524,8 @@ header .menu {
     align-items: center;
     justify-content: center;
     height: auto;
-    max-width: 100%;
+    max-width: 13vw;
+    max-height: 42vh;
 }
 
 .section__card h2,
@@ -560,7 +539,7 @@ header .menu {
 
 .section__card p,
 .section__card__veggie p {
-    font-size: 1vw;
+    font-size: 2.5vh;
     font-family: 'Marcellus SC', serif;
     color: #000000;
     font-weight: 300;
@@ -712,6 +691,10 @@ footer a {
     cursor: pointer;
 }
 
+.footer__contacto {
+    margin-top: 0;
+}
+
 /*** FIN CONTACTO ***/
 /*** MEDIA QUERIES ***/
 @media screen and (min-width:901px) {
@@ -825,6 +808,9 @@ footer a {
     }
 
    /*** MENU ***/
+    .background__pizza h2 {
+        font-size: 10vh;
+   }
     .section__card {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(5, 1fr);
@@ -871,7 +857,7 @@ footer a {
     }
 
     .background__pizza h2 {
-        font-size: 8vh;
+        font-size: 6vh;
     }
 
     .section__card,
@@ -906,7 +892,7 @@ footer a {
     .section__card a,
     .section__card__veggie a {
         padding: 2vw;
-        font-size: 6vw;
+        font-size: 5vw;
     }
 
     /*** CONTACTO ***/
