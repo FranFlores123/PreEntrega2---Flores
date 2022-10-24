@@ -272,10 +272,10 @@ font-family: 'Satisfy', cursive;
         flex: 2;
     }
     .box1 h1 {
-        font-size: 7vh;
+        font-size: 10vw;
     }
     .box1 h2 {
-        font-size: 5vh;
+        font-size: 7vw;
     }
     .box2 a,
     .box3 a,
@@ -288,7 +288,7 @@ font-family: 'Satisfy', cursive;
     }    
 }
 
-/*** FIN HOME ***/
+/*** FIN MQ HOME ***/
 /**** INICIO MENU ****/
 
 header {
@@ -452,15 +452,18 @@ header .menu {
 .veggie__title {
     width: 100%;
     height: 15vh;
-    padding-block: 2vh;
     margin-block: 3rem;
     background-color: #494040;
     color: #ffffff;
     text-transform: uppercase;
-    text-align: center;
-    display: block;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     font-family: 'Rubik Dirt', cursive;
-    font-size: 6vh;
+}
+
+.veggie__title h2 {
+    font-size: 8vh;
 }
 
 .veggie__title span {
@@ -867,16 +870,18 @@ footer a {
     }
 
     .card {
-        width: 80vw;
+        width: 90vw;
         height: 80vh;
     }
 
-    .pizzaimg {
+    .section__card .pizzaimg,
+    .section__card__veggie .pizzaimg {
         flex: 1;    
     }
 
-    .description {
-        flex: 1; 
+    .section__card .description,
+    .section__card__veggie .description {
+        flex: 1;
     }
 
     .section__card h2,
@@ -886,13 +891,17 @@ footer a {
 
     .section__card p,
     .section__card__veggie p {
-        font-size: 4vw;
+        font-size: 1.2rem;
     }
 
     .section__card a,
     .section__card__veggie a {
-        padding: 2vw;
+        padding: 3vw;
         font-size: 5vw;
+    }
+
+    .veggie__title h2 {
+        font-size: 7vh;
     }
 
     /*** CONTACTO ***/
