@@ -246,6 +246,7 @@ font-family: 'Satisfy', cursive;
 
 @media screen and (max-width: 480px) {  
     .section__box {
+        height: 100vh;
         display: flex;
         flex-direction: column;
         grid-template-columns: 1fr;
