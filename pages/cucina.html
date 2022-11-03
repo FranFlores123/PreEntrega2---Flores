@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
     <title>Menu</title>
 </head>
-<body>
+<body class="body__menu">
     <header>
         <input type="checkbox" id="btn__menu">
         <label class="btn__label" for="btn__menu"><img class="imgiconomenu" src="../images/menu icono.png" alt="menu icono"></label>
@@ -18,29 +18,49 @@
                 <li class="menu__item"><a href="../index.html"> <i class="fa-solid fa-house-chimney"></i> </a> </li>
                 <li class="menu__item"><a href="../pages/menu.html"> Menu </a></li>
                 <li class="menu__item  active"><a href="../pages/cucina.html"> Cucina con Noi </a></li>
-                <li class="menu__item"><a href="../pages/quienessomos.html"> Quienes somos </a></li>
+                <li class="menu__item"><a href="../pages/nuestrometodo.html"> Nuestro Metodo </a></li>
                 <li class="menu__item"><a href="../pages/contacto.html"> Contacto </a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <div>
-            <img src="../images/personas cocinando.jpg" alt="">
-            <h4>Vení a cocinar en familia</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas culpa ea optio a doloremque voluptatem maxime adipisci tempora repudiandae soluta ullam consequatur quod qui ratione eos, porro officia quam neque?</p>
-            <button>VER MAS</button>
+    <section class="cucina__cards">
+        <div class="cucina__card swing-in-top-fwd">
+            <img src="../images/12.jpg" alt="">
+            <h3>Taller de cocina</h3>
+            <p>Vení a aprender con los mejores chefs y aprendé sus secretos</p>
+            <a href="../pages/contacto.html">MAS INFO</a>
         </div>
-        <div>
-            <img src="../images/niño cocinando.jpg" alt="">
-            <h4>Para los más pequeños</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas culpa ea optio a doloremque voluptatem maxime adipisci tempora repudiandae soluta ullam consequatur quod qui ratione eos, porro officia quam neque?</p>
-            <button>VER MAS</button>
+        <div class="cucina__card swing-in-top-fwd anim__delay1">
+            <img src="../images/niños cocinando.jpg" alt="">
+            <h3>Para los más pequeños</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas elit?</p>
+            <a href="../pages/contacto.html">MAS INFO</a>
+        </div>
+        <div class="cucina__card swing-in-top-fwd anim__delay2">
+            <img src="../images/16.jpg" alt="">
+            <h3>Cursos personalizados</h3>
+            <p>Para venir a cocinar con familia o amigos. Sólo tenés que traer tus ganas de cocinar.</p>
+            <a href="../pages/contacto.html">MAS INFO</a>
         </div>
     </section>
     <footer>
-        <h2>Seguinos</h2>
-        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+        <section class="footer footer__margin">
+            <div class="footer__title"><h2>pizza <span>house</span></h2></div>
+            <nav class="navbar__footer">
+                <ul class="menu__footer">
+                    <li class="menu__item__f"><a href="../index.html"> <i class="fa-solid fa-house-chimney"></i> </a> </li>
+                    <li class="menu__item__f"><a href="../pages/menu.html"> Menu </a></li>
+                    <li class="menu__item__f"><a href="../pages/cucina.html"> Cucina con Noi </a></li>
+                    <li class="menu__item__f"><a href="../pages/nuestrometodo.html"> Nuestro Metodo </a></li>
+                    <li class="menu__item__f"><a href="../pages/contacto.html"> Contacto </a></li>
+                </ul>
+            </nav>
+            <div class="redes">
+                <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </section>
     </footer>
 </body>
 </html>
